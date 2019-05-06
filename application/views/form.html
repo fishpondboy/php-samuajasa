@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!------ Include the above in your HEAD tag ---------->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <!-- custom css -->
+    <link href="css/ui.css" rel="stylesheet" type="text/css" />
+    <!-- custom css end -->
+</head>
+
+<body>
+    <div class="container">
+        <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-white">
+            <a class="navbar-brand" href="#"> <img class="logo" src="images/samuajasa.png"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar1"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbar1">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="product.html">Product</a></li>
+                    <li class="nav-item"><a class="nav-link" href="product.html">Top Product</a></li>
+                    <li class="nav-item"><a class="nav-link" href="product.html">Product</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    <!-- ========================= SECTION INTRO ========================= -->
+    <section class="section-intro text-white text-center">
+        <div class="container d-flex flex-column" style="min-height:80vh;">
+
+            <div class="row mt-auto">
+                <div class="col-lg-8 col-sm-12 text-center mx-auto">
+                    <h1 class="display-4 mb-3">Marketplace platform</h1>
+                    <p class="lead mb-5">Cempus amet donec, egestas pulvinar amet semper accusamus commod</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-9 col-md-8 col-sm-12 mx-auto text-center">
+                    <form class="form-noborder">
+                        <div class="form-row mb-5">
+                            <div class="col-lg-6 col-sm-12 form-group">
+                                <input class="form-control form-control-lg" placeholder="Search keyword" type="text">
+                            </div>
+                            <div class="col-lg-3 col-sm-12 form-group">
+                                <select class="custom-select form-control-lg">
+                                    <option> All category </option>
+                                    <option> Category name </option>
+                                    <option> Category name </option>
+                                    <option> Category name </option>
+                                </select>
+                            </div>
+                            <div class="col-lg-3 col-sm-12 form-group">
+                                <button class="btn btn-warning btn-block btn-lg" type="submit">Search</button>
+                            </div>
+                        </div>
+                    </form>
+                    <p class="small">Cempus amet donec, egestas pulvinar amet semper accusamus commod</p>
+                    <ul class="list-inline my-5">
+                        <li class="list-inline-item">
+                            <a class="h4 text-light p-2" href="#">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a class="h4 text-light p-2" href="#">
+                                <i class="fab fa-facebook"></i>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a class="h4 text-light p-2" href="#">
+                                <i class="fab fa-dribbble"></i>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a class="h4 text-light p-2" href="#">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div> <!-- col.// -->
+            </div> <!-- row.// -->
+
+        </div>
+    </section>
+    <!-- ========================= SECTION INTRO END// ========================= -->
+
+    <!-- content -->
+    <div class="section">
+        <div class="container ">
+            <div class="row">
+                <div class="col">
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">Contact</li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="card">
+                        <div class="card-header bg-primary text-white"><i class="fa fa-envelope"></i> No Pesanan:
+                        </div>
+                        <div class="card-body">
+                            <form>
+                                <div class="form-group">
+                                    <label for="name">Jenis Jasa</label>
+                                    <input type="text" class="form-control" id="jasa" aria-describedby="emailHelp"
+                                        readonly>
+                                </div>
+                                <div class="form-group">
+                                    <label for="name">Nama Pemesan</label>
+                                    <input type="text" class="form-control" id="name" aria-describedby="emailHelp"
+                                        placeholder="Masukan Nama Anda" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="email">No Telepon</label>
+                                    <input type="number" class="form-control" id="nomortelepom"
+                                        aria-describedby="emailHelp" placeholder="Masukan Nomor Telepon Anda" required>
+                                    <small id="emailHelp" class="form-text text-muted">Pastikan Memasukam nomor telepon
+                                        yang
+                                        benar untuk memudahkan proses pengerjaan</small>
+                                </div>
+                                <div class="form-group">
+                                    <label for="message">Alamat</label>
+                                    <textarea class="form-control" id="message" rows="6" required></textarea>
+                                </div>
+                                <div class="mx-auto">
+                                    <button type="submit" class="btn btn-primary text-right">Submit</button></div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ========================= FOOTER ========================= -->
+    <footer class="section-footer bg-secondary">
+        <div class="container">
+            <section class="footer-top padding-top">
+                <div class="row">
+                    <aside class="col-sm-3 col-md-3 white">
+                        <h5 class="title">Customer Services</h5>
+                        <ul class="list-unstyled">
+                            <li> <a href="#">Help center</a></li>
+                            <li> <a href="#">Money refund</a></li>
+                            <li> <a href="#">Terms and Policy</a></li>
+                            <li> <a href="#">Open dispute</a></li>
+                        </ul>
+                    </aside>
+                    <aside class="col-sm-3  col-md-3 white">
+                        <h5 class="title">My Account</h5>
+                        <ul class="list-unstyled">
+                            <li> <a href="#"> User Login </a></li>
+                            <li> <a href="#"> User register </a></li>
+                            <li> <a href="#"> Account Setting </a></li>
+                            <li> <a href="#"> My Orders </a></li>
+                            <li> <a href="#"> My Wishlist </a></li>
+                        </ul>
+                    </aside>
+                    <aside class="col-sm-3  col-md-3 white">
+                        <h5 class="title">About</h5>
+                        <ul class="list-unstyled">
+                            <li> <a href="#"> Our history </a></li>
+                            <li> <a href="#"> How to buy </a></li>
+                            <li> <a href="#"> Delivery and payment </a></li>
+                            <li> <a href="#"> Advertice </a></li>
+                            <li> <a href="#"> Partnership </a></li>
+                        </ul>
+                    </aside>
+                    <aside class="col-sm-3">
+                        <article class="white">
+                            <h5 class="title">Contacts</h5>
+                            <p>
+                                <strong>Phone: </strong> +123456789 <br>
+                                <strong>Fax:</strong> +123456789
+                            </p>
+
+                            <div class="btn-group white">
+                                <a class="btn btn-facebook" title="Facebook" target="_blank" href="#"><i
+                                        class="fab fa-facebook-f  fa-fw"></i></a>
+                                <a class="btn btn-instagram" title="Instagram" target="_blank" href="#"><i
+                                        class="fab fa-instagram  fa-fw"></i></a>
+                                <a class="btn btn-youtube" title="Youtube" target="_blank" href="#"><i
+                                        class="fab fa-youtube  fa-fw"></i></a>
+                                <a class="btn btn-twitter" title="Twitter" target="_blank" href="#"><i
+                                        class="fab fa-twitter  fa-fw"></i></a>
+                            </div>
+                        </article>
+                    </aside>
+                </div> <!-- row.// -->
+                <br>
+            </section>
+            <section class="footer-bottom row border-top-white">
+                <div class="col-sm-6 text-right">
+                    <p class="text-sm-right text-white-50">
+                        Copyright &copy 2019 <br>
+                        <a href="#" class="text-white-50">Omincron Project</a>
+                    </p>
+                </div>
+            </section> <!-- //footer-top -->
+        </div><!-- //container -->
+    </footer>
+    <!-- ========================= FOOTER END // ========================= -->
+</body>
+
+</html>
