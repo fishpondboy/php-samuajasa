@@ -74,8 +74,8 @@
             <div class="row mt-auto">
                 <div class="col-lg-8 col-sm-12 text-center mx-auto">
                     <img src="<?= base_url(); ?>assets/images/samuajasa.png" alt="gambarsamuajasa" height="180px;" width="auto;" class="img-responsive">
-                    </br>
-                    </br>
+                    <br />
+                    <br />
                 </div>
             </div>
             <div class="row">
@@ -104,7 +104,7 @@
                             </a>
                         </li>
                         <li class="list-inline-item my-5">
-                            <a  href="https://api.whatsapp.com/send?phone=6281340234697&text=Halo%20Samua%20Jasa%20Saya%20Ingin%20Memesan%20Jasa%20.... "class="h2 text-dark p-1">
+                            <a href="https://api.whatsapp.com/send?phone=6281340234697&text=Halo%20Samua%20Jasa%20Saya%20Ingin%20Memesan%20Jasa%20.... " class="h2 text-dark p-1">
                                 <i class="fab fa-whatsapp"> Admin 3</i>
                             </a>
                         </li>
@@ -143,7 +143,7 @@
                             <div class="bottom-wrap">
                                 <a href="<?= base_url(); ?>index.php/C_Product/ID/<?= $t->id_jasa ?>" class="btn btn-sm btn-warning float-right">Detail</a>
                                 <div class="price-wrap h5">
-                                    
+
                                 </div> <!-- price-wrap.// -->
                             </div> <!-- bottom-wrap.// -->
                         </figure>

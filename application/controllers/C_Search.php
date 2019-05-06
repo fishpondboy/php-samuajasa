@@ -1,7 +1,8 @@
 <?php
-defined('BASEPATH') OR exit('No direct script access allowed');
+defined('BASEPATH') or exit('No direct script access allowed');
 
-class C_Search extends CI_Controller {
+class C_Search extends CI_Controller
+{
 	function __construct()
 	{
 		parent::__construct();
@@ -13,6 +14,13 @@ class C_Search extends CI_Controller {
 		$keyword = $this->input->post('keyword');
 		$products = $this->M_Search->search($keyword);
 		$data['products'] = $products;
-		$this->load->view('search',$data);
+		$this->load->view('search', $data);
+	}
+
+	public function saran()
+	{
+		$jasa = $this->input->post("saran");
+		$ket = $this->input->post("ketsaran");
+		$this->M_Search->saran($jasa, $ket);
 	}
 }

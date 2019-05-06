@@ -9,7 +9,6 @@
 	<meta name="author" content="Bootstrap-ecommerce by Vosidiy">
 
 	<title>Samua Jasa</title>
->
 
 	<!-- jQuery -->
 	<script src="<?php echo base_url(); ?>assets/js/jquery-2.0.0.min.js" type="text/javascript"></script>
@@ -131,7 +130,7 @@
 									<aside class="col-sm-3 border-left">
 										<div class="action-wrap">
 											<div class="price-wrap h4">
-												
+
 											</div> <!-- info-price-detail // -->
 											<br>
 											<p>
@@ -143,6 +142,39 @@
 							</div> <!-- card-body .// -->
 						</article> <!-- card product .// -->
 					<?php } ?>
+					<!-- Search not found Start -->
+					<br>
+					<hr />
+					<br>
+					<article class="card card-product">
+						<div class="card-body">
+							<div class="row">
+								<aside class="col-sm-7">
+									<h2>Tidak menemukan jasa yang anda cari?</h2>
+									<p>Bantu Kami Dengan Memberi Saran Jasa Yang anda Cari</p>
+								</aside>
+								<br>
+								<aside class="col-sm-5 border-left ">
+									<form action="<?= base_url(); ?>index.php/C_Search/Saran" method="post">
+										<div class="form-group">
+											<label for="jasa">
+												<h6>Nama Jasa:</h6>
+											</label>
+											<input type="text" class="form-control" id="saran" name="saran" required>
+										</div>
+										<div class="form-group">
+											<label for="ket">
+												<h6>Keterangan:</h6>
+											</label>
+											<textarea type="text" class="form-control" id="ketsaran" rows="3" name="ketsaran" required></textarea>
+										</div>
+										<button type="submit" class="btn btn-primary">Sarankan</button>
+									</form>
+								</aside> <!-- col.// -->
+							</div> <!-- row.// -->
+						</div> <!-- card-body .// -->
+					</article>
+					<!-- Search not found End -->
 					<!-- Batas sidebar -->
 				</main> <!-- col.// -->
 			</div>
