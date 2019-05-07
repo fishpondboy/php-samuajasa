@@ -48,6 +48,173 @@
     </script>
 
 <body>
+    <!-- ========================= SECTION INTRO END// ========================= -->
+
+    <!-- Floating Button Start -->
+    <div class="float">
+        <a class="float" id="menu-share">
+            <i class="fa fa-phone my-float"></i>
+        </a>
+        <ul>
+            <li><a href="#" id="menu-share">
+                    <i class="fa fa-whatsapp my-float"></i>
+                </a></li>
+            <li><a href="#" id="menu-share">
+                    <i class="fa fa-whatsapp my-float"></i>
+                </a></li>
+            <li><a href="#" id="menu-share">
+                    <i class="fa fa-whatsapp my-float"></i>
+                </a></li>
+        </ul>
+    </div>
+    <style>
+        /* * {
+            padding: 0;
+            margin: 0;
+        } */
+
+        .label-container {
+            position: fixed;
+            bottom: 48px;
+            right: 105px;
+            display: table;
+            visibility: hidden;
+        }
+
+        .label-text {
+            color: #FFF;
+            background: rgba(51, 51, 51, 0.5);
+            display: table-cell;
+            vertical-align: middle;
+            padding: 10px;
+            border-radius: 3px;
+        }
+
+        .label-arrow {
+            display: table-cell;
+            vertical-align: middle;
+            color: #333;
+            opacity: 0.5;
+        }
+
+        .float {
+            position: fixed;
+            width: 50px;
+            height: 50px;
+            bottom: 30px;
+            right: 30px;
+            background-color: #140041;
+            color: #FFF;
+            border-radius: 50px;
+            text-align: center;
+            box-shadow: 1px 1px 2px #000;
+            max-width: 100%;
+            z-index: 1000;
+            animation: bot-to-top 2s ease-out;
+        }
+
+        .float ul {
+            position: fixed;
+            right: 30px;
+            padding-bottom: 20px;
+            bottom: 50px;
+            max-width: 100%;
+            z-index: 100;
+        }
+
+        .float ul li {
+            list-style: none;
+            margin-bottom: 10px;
+        }
+
+        .float ul li a {
+            background-color: #ff3cc5;
+            color: #FFF;
+            border-radius: 50px;
+            text-align: center;
+            box-shadow: 1px 1px 2px #000;
+            width: 50px;
+            height: 50px;
+            display: block;
+            max-width: 100%;
+        }
+
+
+        .float ul:hover {
+            visibility: visible !important;
+            opacity: 1 !important;
+        }
+
+        .my-float {
+            font-size: 20px;
+            margin-top: 15px;
+        }
+
+
+        a#menu-share+ul {
+            visibility: hidden;
+
+        }
+
+        a#menu-share:hover+ul {
+            visibility: visible;
+            animation: scale-in 0.5s;
+        }
+
+        a#menu-share i {
+            animation: rotate-in 0.5s;
+        }
+
+        a#menu-share:hover>i {
+            animation: rotate-out 0.5s;
+        }
+
+
+        @keyframes bot-to-top {
+            0% {
+                bottom: -40px
+            }
+
+            50% {
+                bottom: 40px
+            }
+        }
+
+        @keyframes scale-in {
+            from {
+                transform: scale(0);
+                opacity: 0;
+            }
+
+            to {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+
+
+
+        @keyframes rotate-in {
+            from {
+                transform: rotate(0deg);
+            }
+
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+        @keyframes rotate-out {
+            from {
+                transform: rotate(360deg);
+            }
+
+            to {
+                transform: rotate(0deg);
+            }
+        }
+    </style>
+    <!-- Floating button End -->
     <section class="section-content bg padding-y-sm">
         <div class="container">
             <nav class="mb-3">
@@ -76,7 +243,7 @@
                                     <h3 class="title mb-3"><?= $product->jasa ?></h3>
                                     <div class="mb-3">
                                         <var class="price h3 text-warning">
-                                            
+
                                         </var>
                                         <!-- <span>/per kg</span> -->
                                     </div> <!-- price-detail-wrap .// -->
@@ -117,7 +284,7 @@
                     <article class="card mt-3">
                         <div class="card-body">
                             <h4>Detail overview</h4>
-                            
+
                         </div> <!-- card-body.// -->
                     </article> <!-- card.// -->
                     <!-- PRODUCT DETAIL .// -->
@@ -125,7 +292,7 @@
 
             </div><!-- container // -->
     </section>
-    <footer class="section-footer fixed-bottom" style="background-color:#1E324E;">
+    <footer class="section-footer" style="background-color:#1E324E;">
         <div class="container">
             <section class="footer-top padding-top">
                 <div class="row">
