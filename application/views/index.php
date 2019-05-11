@@ -91,23 +91,6 @@
                             </div>
                         </div>
                     </form>
-                    <h1 class="text-dark lead">Hubungi Kami</h1>
-                    <ul class="list-inline my-5">
-                        <li class="list-inline-item">
-                            <a href="https://api.whatsapp.com/send?phone=6281343683445&text=Halo%20Samua%20Jasa%20Saya%20Ingin%20Memesan%20Jasa%20...." class="h2 text-dark p-1">
-                                <i class="fab fa-whatsapp">Admin 1</i>
-                            </a>
-                        </li>
-                        <li class="list-inline-item my-5">
-                            <a href="https://api.whatsapp.com/send?phone=6281243279566&text=Halo%20Samua%20Jasa%20Saya%20Ingin%20Memesan%20Jasa%20...." style class="h2 text-dark p- my-51">
-                                <i class="fab fa-whatsapp"> Admin 2</i>
-                            </a>
-                        </li>
-                        <li class="list-inline-item my-5">
-                            <a href="https://api.whatsapp.com/send?phone=6281340234697&text=Halo%20Samua%20Jasa%20Saya%20Ingin%20Memesan%20Jasa%20.... " class="h2 text-dark p-1">
-                                <i class="fab fa-whatsapp"> Admin 3</i>
-                            </a>
-                        </li>
                 </div> <!-- col.// -->
             </div> <!-- row.// -->
 
@@ -121,14 +104,14 @@
             <i class="fa fa-phone my-float"></i>
         </a>
         <ul>
-            <li><a href="#" id="menu-share">
-                    <i class="fa fa-whatsapp my-float"></i>
+            <li><a href="https://api.whatsapp.com/send?phone=6281343683445&text=Halo%20Samua%20Jasa%20Saya%20Ingin%20Memesan%20Jasa%20...." id="menu-share">
+                    <i class="fab fa-whatsapp my-float"></i>
                 </a></li>
-            <li><a href="#" id="menu-share">
-                    <i class="fa fa-whatsapp my-float"></i>
+            <li><a href="https://api.whatsapp.com/send?phone=6281243279566&text=Halo%20Samua%20Jasa%20Saya%20Ingin%20Memesan%20Jasa%20...." id="menu-share">
+                    <i class="fab fa-whatsapp my-float"></i>
                 </a></li>
-            <li><a href="#" id="menu-share">
-                    <i class="fa fa-whatsapp my-float"></i>
+            <li><a href="https://api.whatsapp.com/send?phone=6281340234697&text=Halo%20Samua%20Jasa%20Saya%20Ingin%20Memesan%20Jasa%20...." id="menu-share">
+                    <i class="fab fa-whatsapp my-float"></i>
                 </a></li>
         </ul>
     </div>
@@ -138,10 +121,29 @@
             margin: 0;
         } */
 
+        @media only screen and (max-width: 768px) {
+            float {
+            position: fixed;
+            width: 70px;
+            height: 70px;
+            bottom:70px;
+            right: 30px;
+            background-color: #14920B;
+            color: #FFF;
+            border-radius: 50px;
+            text-align: center;
+            box-shadow: 1px 1px 2px #000;
+            max-width: 100%;
+            z-index: 1000;
+            animation: bot-to-top 2s ease-out;
+            
+        }
+        }
+ 
         .label-container {
             position: fixed;
             bottom: 48px;
-            right: 105px;
+            right: 120px;
             display: table;
             visibility: hidden;
         }
@@ -168,7 +170,7 @@
             height: 50px;
             bottom: 30px;
             right: 30px;
-            background-color: #140041;
+            background-color: #14920B;
             color: #FFF;
             border-radius: 50px;
             text-align: center;
@@ -193,7 +195,7 @@
         }
 
         .float ul li a {
-            background-color: #ff3cc5;
+            background-color: #14920B;
             color: #FFF;
             border-radius: 50px;
             text-align: center;
@@ -211,7 +213,7 @@
         }
 
         .my-float {
-            font-size: 20px;
+            font-size: 30px;
             margin-top: 15px;
         }
 
@@ -223,15 +225,15 @@
 
         a#menu-share:hover+ul {
             visibility: visible;
-            animation: scale-in 0.5s;
+            animation: scale-in 0.8s;
         }
 
         a#menu-share i {
-            animation: rotate-in 0.5s;
+            animation: rotate-in 0.7s;
         }
 
         a#menu-share:hover>i {
-            animation: rotate-out 0.5s;
+            animation: rotate-out 0.8s;
         }
 
 
@@ -287,13 +289,13 @@
                 <h2 class=" text-center">Jasa Pilihan Untuk Anda</h2>
             </header><!-- sect-heading -->
             <div class="row">
-                <?php foreach ($top_product as $t) { ?>
+<!-- Top Product 1 -->
                     <div class="col-md-4">
                         <figure class="card card-product">
-                            <div class="img-wrap"><img src="<?php echo base_url(); ?>assets/images/vendor/<?= $t->id_jasa ?>.jpg"></div>
+                            <div class="img-wrap"><img src="<?php echo base_url(); ?>assets/images/vendor/<?= $top_product1->id_jasa ?>.jpg"></div>
                             <figcaption class="info-wrap">
-                                <h4 class="title"><?= $t->jasa ?></h4>
-                                <p class="desc"><?= $t->ket ?></p>
+                                <h4 class="title"><?= $top_product1->jasa ?></h4>
+                                <p class="desc"><?= $top_product1->ket ?></p>
                                 <div class="rating-wrap">
                                     <ul class="rating-stars">
                                         <li style="width:80%" class="stars-active">
@@ -306,14 +308,68 @@
                                 </div> <!-- rating-wrap.// -->
                             </figcaption>
                             <div class="bottom-wrap">
-                                <a href="<?= base_url(); ?>index.php/C_Product/ID/<?= $t->id_jasa ?>" class="btn btn-sm btn-warning float-right">Detail</a>
+                                <a href="<?= base_url(); ?>index.php/C_Product/ID/<?= $top_product1->id_jasa ?>" class="btn btn-sm btn-warning float-right">Detail</a>
                                 <div class="price-wrap h5">
 
                                 </div> <!-- price-wrap.// -->
                             </div> <!-- bottom-wrap.// -->
                         </figure>
                     </div> <!-- col // -->
-                <?php } ?>
+    <!-- Top Product1 // -->
+    <!-- Top Product 2 -->
+                    <div class="col-md-4">
+                        <figure class="card card-product">
+                            <div class="img-wrap"><img src="<?php echo base_url(); ?>assets/images/vendor/<?= $top_product2->id_jasa ?>.jpg"></div>
+                            <figcaption class="info-wrap">
+                                <h4 class="title"><?= $top_product2->jasa ?></h4>
+                                <p class="desc"><?= $top_product2->ket ?></p>
+                                <div class="rating-wrap">
+                                    <ul class="rating-stars">
+                                        <li style="width:80%" class="stars-active">
+                                            <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+                                        </li>
+                                        <li>
+                                            <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+                                        </li>
+                                    </ul>
+                                </div> <!-- rating-wrap.// -->
+                            </figcaption>
+                            <div class="bottom-wrap">
+                                <a href="<?= base_url(); ?>index.php/C_Product/ID/<?= $top_product2->id_jasa ?>" class="btn btn-sm btn-warning float-right">Detail</a>
+                                <div class="price-wrap h5">
+
+                                </div> <!-- price-wrap.// -->
+                            </div> <!-- bottom-wrap.// -->
+                        </figure>
+                    </div> <!-- col // -->
+    <!-- Top Product2 // -->
+        <!-- Top Product 2 -->
+                    <div class="col-md-4">
+                        <figure class="card card-product">
+                            <div class="img-wrap"><img src="<?php echo base_url(); ?>assets/images/vendor/<?= $top_product3->id_jasa ?>.jpg"></div>
+                            <figcaption class="info-wrap">
+                                <h4 class="title"><?= $top_product3->jasa ?></h4>
+                                <p class="desc"><?= $top_product3->ket ?></p>
+                                <div class="rating-wrap">
+                                    <ul class="rating-stars">
+                                        <li style="width:80%" class="stars-active">
+                                            <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+                                        </li>
+                                        <li>
+                                            <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+                                        </li>
+                                    </ul>
+                                </div> <!-- rating-wrap.// -->
+                            </figcaption>
+                            <div class="bottom-wrap">
+                                <a href="<?= base_url(); ?>index.php/C_Product/ID/<?= $top_product3->id_jasa ?>" class="btn btn-sm btn-warning float-right">Detail</a>
+                                <div class="price-wrap h5">
+
+                                </div> <!-- price-wrap.// -->
+                            </div> <!-- bottom-wrap.// -->
+                        </figure>
+                    </div> <!-- col // -->
+    <!-- Top Product3 // -->
             </div> <!-- row.// -->
 
 
@@ -357,71 +413,71 @@
     <!-- batas product -->
 
     <!-- section about us -->
-    <div class="aboutus-section" id="about">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-3 col-sm-6 col-xs-12">
-                    <div class="aboutus">
-                        <h2 class="aboutus-title">About Us</h2>
-                        <p class="aboutus-text">Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor
-                            eu,
-                            consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in.</p>
-                        <p class="aboutus-text">This is Photoshop's version of Lorem Ipsum. Proin gravida nibh
-                            vel velit
-                            auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat
-                            ipsum,
-                            nec sagittis sem</p>
-                        <a class="aboutus-more" href="#">read more</a>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-6 col-xs-12">
-                </div>
-                <div class="col-md-5 col-sm-6 col-xs-12">
-                    <div class="feature">
-                        <div class="feature-box">
-                            <div class="clearfix">
-                                <div class="iconset">
-                                    <span class="glyphicon glyphicon-cog icon"></span>
-                                </div>
-                                <div class="feature-content">
-                                    <h4>Work with heart</h4>
-                                    <p>Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu,
-                                        consequat
-                                        vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="feature-box">
-                            <div class="clearfix">
-                                <div class="iconset">
-                                    <span class="glyphicon glyphicon-cog icon"></span>
-                                </div>
-                                <div class="feature-content">
-                                    <h4>Reliable services</h4>
-                                    <p>Donec vitae sapien ut libero venenatis faucibu. Nullam quis ante. Etiam
-                                        sit amet
-                                        orci eget eros faucibus tincidunt</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="feature-box">
-                            <div class="clearfix">
-                                <div class="iconset">
-                                    <span class="glyphicon glyphicon-cog icon"></span>
-                                </div>
-                                <div class="feature-content">
-                                    <h4>Great support</h4>
-                                    <p>Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu,
-                                        consequat
-                                        vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+    <!--<div class="aboutus-section" id="about">-->
+    <!--    <div class="container">-->
+    <!--        <div class="row">-->
+    <!--            <div class="col-md-3 col-sm-6 col-xs-12">-->
+    <!--                <div class="aboutus">-->
+    <!--                    <h2 class="aboutus-title">About Us</h2>-->
+    <!--                    <p class="aboutus-text">Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor-->
+    <!--                        eu,-->
+    <!--                        consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in.</p>-->
+    <!--                    <p class="aboutus-text">This is Photoshop's version of Lorem Ipsum. Proin gravida nibh-->
+    <!--                        vel velit-->
+    <!--                        auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat-->
+    <!--                        ipsum,-->
+    <!--                        nec sagittis sem</p>-->
+    <!--                    <a class="aboutus-more" href="#">read more</a>-->
+    <!--                </div>-->
+    <!--            </div>-->
+    <!--            <div class="col-md-3 col-sm-6 col-xs-12">-->
+    <!--            </div>-->
+    <!--            <div class="col-md-5 col-sm-6 col-xs-12">-->
+    <!--                <div class="feature">-->
+    <!--                    <div class="feature-box">-->
+    <!--                        <div class="clearfix">-->
+    <!--                            <div class="iconset">-->
+    <!--                                <span class="glyphicon glyphicon-cog icon"></span>-->
+    <!--                            </div>-->
+    <!--                            <div class="feature-content">-->
+    <!--                                <h4>Work with heart</h4>-->
+    <!--                                <p>Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu,-->
+    <!--                                    consequat-->
+    <!--                                    vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in.</p>-->
+    <!--                            </div>-->
+    <!--                        </div>-->
+    <!--                    </div>-->
+    <!--                    <div class="feature-box">-->
+    <!--                        <div class="clearfix">-->
+    <!--                            <div class="iconset">-->
+    <!--                                <span class="glyphicon glyphicon-cog icon"></span>-->
+    <!--                            </div>-->
+    <!--                            <div class="feature-content">-->
+    <!--                                <h4>Reliable services</h4>-->
+    <!--                                <p>Donec vitae sapien ut libero venenatis faucibu. Nullam quis ante. Etiam-->
+    <!--                                    sit amet-->
+    <!--                                    orci eget eros faucibus tincidunt</p>-->
+    <!--                            </div>-->
+    <!--                        </div>-->
+    <!--                    </div>-->
+    <!--                    <div class="feature-box">-->
+    <!--                        <div class="clearfix">-->
+    <!--                            <div class="iconset">-->
+    <!--                                <span class="glyphicon glyphicon-cog icon"></span>-->
+    <!--                            </div>-->
+    <!--                            <div class="feature-content">-->
+    <!--                                <h4>Great support</h4>-->
+    <!--                                <p>Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu,-->
+    <!--                                    consequat-->
+    <!--                                    vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in.</p>-->
+    <!--                            </div>-->
+    <!--                        </div>-->
+    <!--                    </div>-->
+    <!--                </div>-->
+    <!--            </div>-->
+    <!--        </div>-->
+    <!--    </div>-->
+    <!--</div>-->
     <!--batas about us -->
 
     <!-- testi -->
@@ -463,72 +519,80 @@
             </div>
         </div>
     </section>
-    <!-- batas testi -->
-    <!-- ===================== SECTION ABOUT US END =============== -->
+     <!--batas testi -->
+     <!--===================== SECTION ABOUT US END =============== -->
 
-    <!-- ========================= FOOTER ========================= -->
-    <footer class="section-footer" style="background-color:#1E324E;">
-        <div class="container">
-            <section class="footer-top padding-top">
-                <div class="row">
-                    <aside class="col-sm-3 col-md-3 white">
-                        <h5 class="title">Customer Services</h5>
-                        <ul class="list-unstyled">
-                            <li> <a href="#">Help center</a></li>
-                            <li> <a href="#">Money refund</a></li>
-                            <li> <a href="#">Terms and Policy</a></li>
-                            <li> <a href="#">Open dispute</a></li>
-                        </ul>
-                    </aside>
-                    <aside class="col-sm-3  col-md-3 white">
-                        <h5 class="title">My Account</h5>
-                        <ul class="list-unstyled">
-                            <li> <a href="#"> User Login </a></li>
-                            <li> <a href="#"> User register </a></li>
-                            <li> <a href="#"> Account Setting </a></li>
-                            <li> <a href="#"> My Orders </a></li>
-                            <li> <a href="#"> My Wishlist </a></li>
-                        </ul>
-                    </aside>
-                    <aside class="col-sm-3  col-md-3 white">
-                        <h5 class="title">About</h5>
-                        <ul class="list-unstyled">
-                            <li> <a href="#"> Our history </a></li>
-                            <li> <a href="#"> How to buy </a></li>
-                            <li> <a href="#"> Delivery and payment </a></li>
-                            <li> <a href="#"> Advertice </a></li>
-                            <li> <a href="#"> Partnership </a></li>
-                        </ul>
-                    </aside>
-                    <aside class="col-sm-3">
-                        <article class="white">
-                            <h5 class="title">Contacts</h5>
-                            <p>
-                                <strong>Phone: </strong> +123456789 <br>
-                                <strong>Fax:</strong> +123456789
-                            </p>
+     <!--========================= FOOTER ========================= -->
+    <!--<footer class="section-footer" style="background-color:#1E324E;">-->
+        <!--<div class="container">-->
+        <!--    <section class="footer-top padding-top">-->
+        <!--        <div class="row">-->
+        <!--            <aside class="col-sm-3 col-md-3 white">-->
+        <!--                <h5 class="title">Customer Services</h5>-->
+        <!--                <ul class="list-unstyled">-->
+        <!--                    <li> <a href="#">Help center</a></li>-->
+        <!--                    <li> <a href="#">Money refund</a></li>-->
+        <!--                    <li> <a href="#">Terms and Policy</a></li>-->
+        <!--                    <li> <a href="#">Open dispute</a></li>-->
+        <!--                </ul>-->
+        <!--            </aside>-->
+        <!--            <aside class="col-sm-3  col-md-3 white">-->
+        <!--                <h5 class="title">My Account</h5>-->
+        <!--                <ul class="list-unstyled">-->
+        <!--                    <li> <a href="#"> User Login </a></li>-->
+        <!--                    <li> <a href="#"> User register </a></li>-->
+        <!--                    <li> <a href="#"> Account Setting </a></li>-->
+        <!--                    <li> <a href="#"> My Orders </a></li>-->
+        <!--                    <li> <a href="#"> My Wishlist </a></li>-->
+        <!--                </ul>-->
+        <!--            </aside>-->
+        <!--            <aside class="col-sm-3  col-md-3 white">-->
+        <!--                <h5 class="title">About</h5>-->
+        <!--                <ul class="list-unstyled">-->
+        <!--                    <li> <a href="#"> Our history </a></li>-->
+        <!--                    <li> <a href="#"> How to buy </a></li>-->
+        <!--                    <li> <a href="#"> Delivery and payment </a></li>-->
+        <!--                    <li> <a href="#"> Advertice </a></li>-->
+        <!--                    <li> <a href="#"> Partnership </a></li>-->
+        <!--                </ul>-->
+        <!--            </aside>-->
+        <!--            <aside class="col-sm-3">-->
+        <!--                <article class="white">-->
+        <!--                    <h5 class="title">Contacts</h5>-->
+        <!--                    <p>-->
+        <!--                        <strong>Phone: </strong> +123456789 <br>-->
+        <!--                        <strong>Fax:</strong> +123456789-->
+        <!--                    </p>-->
 
-                            <div class="btn-group white">
-                                <a class="btn btn-facebook" title="Facebook" target="_blank" href="#"><i class="fab fa-facebook-f  fa-fw"></i></a>
-                                <a class="btn btn-instagram" title="Instagram" target="_blank" href="#"><i class="fab fa-instagram  fa-fw"></i></a>
-                                <a class="btn btn-youtube" title="Youtube" target="_blank" href="#"><i class="fab fa-youtube  fa-fw"></i></a>
-                                <a class="btn btn-twitter" title="Twitter" target="_blank" href="#"><i class="fab fa-twitter  fa-fw"></i></a>
-                            </div>
-                        </article>
-                    </aside>
-                </div> <!-- row.// -->
-                <br>
-            </section>
-            <section class="footer-bottom row border-top-white">
-                <div class="col-sm-12 text-right">
-                    <p class="text-sm-right text-white-50">
+    <!--                        <div class="btn-group white">-->
+    <!--                            <a class="btn btn-facebook" title="Facebook" target="_blank" href="#"><i class="fab fa-facebook-f  fa-fw"></i></a>-->
+    <!--                            <a class="btn btn-instagram" title="Instagram" target="_blank" href="https://www.instagram.com/samuajasa/"><i class="fab fa-instagram  fa-fw"></i></a>-->
+                            <!--    <a class="btn btn-youtube" title="Youtube" target="_blank" href="#"><i class="fab fa-youtube  fa-fw"></i></a>-->
+                            <!--    <a class="btn btn-twitter" title="Twitter" target="_blank" href="#"><i class="fab fa-twitter  fa-fw"></i></a>-->
+                            <!--</div>-->
+    <!--                    </article>-->
+    <!--                </aside>-->
+    <!--            </div> <!-- row.// -->
+    <!--            <br>-->
+    <!--        </section>-->
+            <footer>
+            <section class="footer-bottom row border-top-white" style="background-color:#1E324E;">
+                <div class="col-sm-12 text-center">
+                    <p class="text-sm-center text-white-50">
                         Copyright &copy 2019
                         <a href="#" class="text-white-50">Samuajasa.com</a>
                     </p>
                 </div>
-            </section> <!-- //footer-top -->
+            </section> <!-- //footer-top 
         </div><!-- //container -->
-    </footer>
+           </footer>
+    
+<!--        <footer>-->
+<!--  <div class="copyright" style="background-color:#1E324E;">-->
+<!--    <p>&copy 2019 - Samuajasa.com</p>-->
+<!--  </div>-->
+<!--</footer>-->
+    
     <!-- ========================= FOOTER END // ========================= -->
 </body>
 

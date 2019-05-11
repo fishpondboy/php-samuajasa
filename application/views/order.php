@@ -77,180 +77,15 @@
         </nav>
     </div>
 
+    <!-- ========================= SECTION INTRO ========================= -->
+   
     <!-- ========================= SECTION INTRO END// ========================= -->
-
-    <!-- Floating Button Start -->
-    <div class="float">
-        <a class="float" id="menu-share">
-            <i class="fa fa-phone my-float"></i>
-        </a>
-        <ul>
-            <li><a href="#" id="menu-share">
-                    <i class="fa fa-whatsapp my-float"></i>
-                </a></li>
-            <li><a href="#" id="menu-share">
-                    <i class="fa fa-whatsapp my-float"></i>
-                </a></li>
-            <li><a href="#" id="menu-share">
-                    <i class="fa fa-whatsapp my-float"></i>
-                </a></li>
-        </ul>
-    </div>
-    <style>
-        /* * {
-            padding: 0;
-            margin: 0;
-        } */
-
-        .label-container {
-            position: fixed;
-            bottom: 48px;
-            right: 105px;
-            display: table;
-            visibility: hidden;
-        }
-
-        .label-text {
-            color: #FFF;
-            background: rgba(51, 51, 51, 0.5);
-            display: table-cell;
-            vertical-align: middle;
-            padding: 10px;
-            border-radius: 3px;
-        }
-
-        .label-arrow {
-            display: table-cell;
-            vertical-align: middle;
-            color: #333;
-            opacity: 0.5;
-        }
-
-        .float {
-            position: fixed;
-            width: 50px;
-            height: 50px;
-            bottom: 30px;
-            right: 30px;
-            background-color: #140041;
-            color: #FFF;
-            border-radius: 50px;
-            text-align: center;
-            box-shadow: 1px 1px 2px #000;
-            max-width: 100%;
-            z-index: 1000;
-            animation: bot-to-top 2s ease-out;
-        }
-
-        .float ul {
-            position: fixed;
-            right: 30px;
-            padding-bottom: 20px;
-            bottom: 50px;
-            max-width: 100%;
-            z-index: 100;
-        }
-
-        .float ul li {
-            list-style: none;
-            margin-bottom: 10px;
-        }
-
-        .float ul li a {
-            background-color: #ff3cc5;
-            color: #FFF;
-            border-radius: 50px;
-            text-align: center;
-            box-shadow: 1px 1px 2px #000;
-            width: 50px;
-            height: 50px;
-            display: block;
-            max-width: 100%;
-        }
-
-
-        .float ul:hover {
-            visibility: visible !important;
-            opacity: 1 !important;
-        }
-
-        .my-float {
-            font-size: 20px;
-            margin-top: 15px;
-        }
-
-
-        a#menu-share+ul {
-            visibility: hidden;
-
-        }
-
-        a#menu-share:hover+ul {
-            visibility: visible;
-            animation: scale-in 0.5s;
-        }
-
-        a#menu-share i {
-            animation: rotate-in 0.5s;
-        }
-
-        a#menu-share:hover>i {
-            animation: rotate-out 0.5s;
-        }
-
-
-        @keyframes bot-to-top {
-            0% {
-                bottom: -40px
-            }
-
-            50% {
-                bottom: 40px
-            }
-        }
-
-        @keyframes scale-in {
-            from {
-                transform: scale(0);
-                opacity: 0;
-            }
-
-            to {
-                transform: scale(1);
-                opacity: 1;
-            }
-        }
-
-
-
-        @keyframes rotate-in {
-            from {
-                transform: rotate(0deg);
-            }
-
-            to {
-                transform: rotate(360deg);
-            }
-        }
-
-        @keyframes rotate-out {
-            from {
-                transform: rotate(360deg);
-            }
-
-            to {
-                transform: rotate(0deg);
-            }
-        }
-    </style>
-    <!-- Floating button End -->
 
     <!-- ========================== SECTION FORM START ======================== -->
     <div class="container">
         <div class="row">
-            <div class="col">
+            <div class="col xl-10 col-md-9 col-sm-12">
                 <div class="card">
-                    <br />
                     <div class="card-header bg-primary text-white"><i class="fa fa-envelope"></i> No Pesanan: <?= $id_pesan ?>
                     </div>
                     <div class="card-body">
@@ -259,6 +94,7 @@
                                 <label for="name">Jenis Jasa</label>
                                 <input type="text" class="form-control" name="jasa" aria-describedby="emailHelp" placeholder="<?= $order->jasa ?>" readonly>
                                 <input type="text" class="form-control" name="id_jasa" aria-describedby="emailHelp" value="<?= $order->id_jasa ?>" hidden>
+                                <input type="text" class="form-control" name="jasa" aria-describedby="emailHelp" value="<?= $order->jasa ?>" hidden>
                                 <input type="text" class="form-control" name="id_pesan" aria-describedby="emailHelp" value="<?= $id_pesan ?>" hidden>
                             </div>
                             <div class="form-group">
@@ -279,6 +115,7 @@
                             <div class="mx-auto">
                                 <button type="submit" class="btn btn-primary text-right">Submit</button></div>
                         </form>
+                        
                     </div>
                 </div>
             </div>
@@ -288,77 +125,90 @@
     <!-- batas timeline -->
 
     <!-- section about us -->
-
+    
     <!--batas about us -->
 
     <!-- testi -->
-
+    
     <!-- batas testi -->
     <!-- ===================== SECTION ABOUT US END =============== -->
 
     <!-- ========================= FOOTER ========================= -->
-    <footer class="section-footer" style="background-color:#1E324E;">
-        <div class="container">
-            <section class="footer-top padding-top">
-                <div class="row">
-                    <aside class="col-sm-3 col-md-3 white">
-                        <h5 class="title">Customer Services</h5>
-                        <ul class="list-unstyled">
-                            <li> <a href="#">Help center</a></li>
-                            <li> <a href="#">Money refund</a></li>
-                            <li> <a href="#">Terms and Policy</a></li>
-                            <li> <a href="#">Open dispute</a></li>
-                        </ul>
-                    </aside>
-                    <aside class="col-sm-3  col-md-3 white">
-                        <h5 class="title">My Account</h5>
-                        <ul class="list-unstyled">
-                            <li> <a href="#"> User Login </a></li>
-                            <li> <a href="#"> User register </a></li>
-                            <li> <a href="#"> Account Setting </a></li>
-                            <li> <a href="#"> My Orders </a></li>
-                            <li> <a href="#"> My Wishlist </a></li>
-                        </ul>
-                    </aside>
-                    <aside class="col-sm-3  col-md-3 white">
-                        <h5 class="title">About</h5>
-                        <ul class="list-unstyled">
-                            <li> <a href="#"> Our history </a></li>
-                            <li> <a href="#"> How to buy </a></li>
-                            <li> <a href="#"> Delivery and payment </a></li>
-                            <li> <a href="#"> Advertice </a></li>
-                            <li> <a href="#"> Partnership </a></li>
-                        </ul>
-                    </aside>
-                    <aside class="col-sm-3">
-                        <article class="white">
-                            <h5 class="title">Contacts</h5>
-                            <p>
-                                <strong>Phone: </strong> +123456789 <br>
-                                <strong>Fax:</strong> +123456789
-                            </p>
+    <!--</br>-->
+    <!--</br>-->
+    <!--<footer class="section-footer" style="background-color:#1E324E;">-->
+    <!--    <div class="container">-->
+    <!--        <section class="footer">-->
+    <!--            <div class="row">-->
+    <!--                <aside class="col-sm-3 col-md-3 white">-->
+    <!--                    <h5 class="title">Customer Services</h5>-->
+    <!--                    <ul class="list-unstyled">-->
+    <!--                        <li> <a href="#">Help center</a></li>-->
+    <!--                        <li> <a href="#">Money refund</a></li>-->
+    <!--                        <li> <a href="#">Terms and Policy</a></li>-->
+    <!--                        <li> <a href="#">Open dispute</a></li>-->
+    <!--                    </ul>-->
+    <!--                </aside>-->
+    <!--                <aside class="col-sm-3  col-md-3 white">-->
+    <!--                    <h5 class="title">My Account</h5>-->
+    <!--                    <ul class="list-unstyled">-->
+    <!--                        <li> <a href="#"> User Login </a></li>-->
+    <!--                        <li> <a href="#"> User register </a></li>-->
+    <!--                        <li> <a href="#"> Account Setting </a></li>-->
+    <!--                        <li> <a href="#"> My Orders </a></li>-->
+    <!--                        <li> <a href="#"> My Wishlist </a></li>-->
+    <!--                    </ul>-->
+    <!--                </aside>-->
+    <!--                <aside class="col-sm-3  col-md-3 white">-->
+    <!--                    <h5 class="title">About</h5>-->
+    <!--                    <ul class="list-unstyled">-->
+    <!--                        <li> <a href="#"> Our history </a></li>-->
+    <!--                        <li> <a href="#"> How to buy </a></li>-->
+    <!--                        <li> <a href="#"> Delivery and payment </a></li>-->
+    <!--                        <li> <a href="#"> Advertice </a></li>-->
+    <!--                        <li> <a href="#"> Partnership </a></li>-->
+    <!--                    </ul>-->
+    <!--                </aside>-->
+    <!--                <aside class="col-sm-3">-->
+    <!--                    <article class="white">-->
+    <!--                        <h5 class="title">Contacts</h5>-->
+    <!--                        <p>-->
+    <!--                            <strong>Phone: </strong> +123456789 <br>-->
+    <!--                            <strong>Fax:</strong> +123456789-->
+    <!--                        </p>-->
 
-                            <div class="btn-group white">
-                                <a class="btn btn-facebook" title="Facebook" target="_blank" href="#"><i class="fab fa-facebook-f  fa-fw"></i></a>
-                                <a class="btn btn-instagram" title="Instagram" target="_blank" href="#"><i class="fab fa-instagram  fa-fw"></i></a>
-                                <a class="btn btn-youtube" title="Youtube" target="_blank" href="#"><i class="fab fa-youtube  fa-fw"></i></a>
-                                <a class="btn btn-twitter" title="Twitter" target="_blank" href="#"><i class="fab fa-twitter  fa-fw"></i></a>
-                            </div>
-                        </article>
-                    </aside>
-                </div> <!-- row.// -->
-                <br>
-            </section>
-            <section class="footer-bottom row border-top-white">
-                <div class="col-sm-6 text-right">
-                    <p class="text-sm-right text-white-50">
-                        Copyright &copy 2019 <br>
-                        <a href="#" class="text-white-50">Samuajasa.com</a>
-                    </p>
-                </div>
-            </section> <!-- //footer-top -->
-        </div><!-- //container -->
-    </footer>
+    <!--                        <div class="btn-group white">-->
+    <!--                            <a class="btn btn-facebook" title="Facebook" target="_blank" href="#"><i class="fab fa-facebook-f  fa-fw"></i></a>-->
+    <!--                            <a class="btn btn-instagram" title="Instagram" target="_blank" href="#"><i class="fab fa-instagram  fa-fw"></i></a>-->
+    <!--                            <a class="btn btn-youtube" title="Youtube" target="_blank" href="#"><i class="fab fa-youtube  fa-fw"></i></a>-->
+    <!--                            <a class="btn btn-twitter" title="Twitter" target="_blank" href="#"><i class="fab fa-twitter  fa-fw"></i></a>-->
+    <!--                        </div>-->
+    <!--                    </article>-->
+    <!--                </aside>-->
+    <!--            </div> <!-- row.// -->
+    <!--            <br>-->
+    <!--        </section>-->
+    <!--        <section class="footer-bottom row border-top-white">-->
+    <!--            <div class="col-sm-6 text-right">-->
+    <!--                <p class="text-sm-right text-white-50">-->
+    <!--                    Copyright &copy 2019 <br>-->
+    <!--                    <a href="#" class="text-white-50">Samuajasa.com</a>-->
+    <!--                </p>-->
+    <!--            </div>-->
+    <!--        </section> <!-- //footer-top -->
+    <!--    </div><!-- //container -->
+    <!--</footer>-->
+     <!--<footer>-->
+     <!--       <section class="footer-bottom row border-top-white" style="background-color:#1E324E;">-->
+     <!--           <div class="col-sm-12 text-center">-->
+     <!--               <p class="text-sm-center text-white-50">-->
+     <!--                   Copyright &copy 2019-->
+     <!--                   <a href="#" class="text-white-50">Samuajasa.com</a>-->
+     <!--               </p>-->
+     <!--           </div>-->
+     <!--       </section> <!-- //footer-top -->
+     <!--   </div><!-- //container -->
+     <!--      </footer>-->
     <!-- ========================= FOOTER END // ========================= -->
 
 

@@ -30,12 +30,12 @@
 			$this->db->insert($table, $data);
 		}
 
-		public function konfirmasi($id_pesan, $id_jasa, $nama, $kontak, $alamat)
+		public function konfirmasi($id_pesan, $jasa, $nama, $kontak, $alamat)
 		{
 		    $formUrl = 'https://docs.google.com/a/vcu.edu/forms/d/e/1FAIpQLSeXSoBG48IXuYKKo7qMFl_YPK8He-uk8OrGv1LOTOOrgG1ncQ/formResponse?usp=pp_url&entry.102446358=';
 		    $answer1 = $id_pesan;
 		    $url2 = '&entry.1454452556=';
-		    $answer2 = $id_jasa;
+		    $answer2 = $jasa;
 		    $url3 = '&entry.1332887292=';
 		    $answer3 = $nama;
 		    $url4 = '&entry.1321842003=';
