@@ -58,7 +58,7 @@
                     <li class="nav-item active">
                         <a class="nav-link" href="<?php echo base_url(); ?>">Home <span class="sr-only">(current)</span></a>
                     </li>
-                    <li class="nav-item"><a class="nav-link" href="<?php echo base_url();  ?>index.php/C_Search/index">Product</a></li>
+                    <li class="nav-item"><a class="nav-link" href="<?php echo base_url();  ?>Search/index">Product</a></li>
                     <li class="nav-item"><a class="nav-link" href="#topproduct">Top Product</a></li>
                     <li class="nav-item"><a class="nav-link" href="#about">About Us</a></li>
                     <li class="nav-item"><a class="nav-link" href="#testimoni">Testimoni</a></li>
@@ -80,7 +80,7 @@
             </div>
             <div class="row">
                 <div class="col-lg-9 col-md-8 col-sm-12 mx-auto text-center">
-                    <form class="form-border" action="<?= base_url(); ?>index.php/C_Search/index" Method="post">
+                    <form class="form-border" action="<?= base_url(); ?>Search/index" Method="post">
                         <div class="form-row mb-5">
                             <div class="col-lg-9 col-sm-12 form-group">
                                 <input class="form-control form-control-lg" placeholder="Cari Keperluan Jasa Anda Di Sini" type="text" name="keyword">
@@ -308,7 +308,7 @@
                                 </div> <!-- rating-wrap.// -->
                             </figcaption>
                             <div class="bottom-wrap">
-                                <a href="<?= base_url(); ?>index.php/C_Product/ID/<?= $top_product1->id_jasa ?>" class="btn btn-sm btn-warning float-right">Detail</a>
+                                <a href="<?= base_url(); ?>Product/ID/<?= $top_product1->id_jasa ?>" class="btn btn-sm btn-warning float-right">Detail</a>
                                 <div class="price-wrap h5">
 
                                 </div> <!-- price-wrap.// -->
@@ -335,7 +335,7 @@
                                 </div> <!-- rating-wrap.// -->
                             </figcaption>
                             <div class="bottom-wrap">
-                                <a href="<?= base_url(); ?>index.php/C_Product/ID/<?= $top_product2->id_jasa ?>" class="btn btn-sm btn-warning float-right">Detail</a>
+                                <a href="<?= base_url(); ?>Product/ID/<?= $top_product2->id_jasa ?>" class="btn btn-sm btn-warning float-right">Detail</a>
                                 <div class="price-wrap h5">
 
                                 </div> <!-- price-wrap.// -->
@@ -362,7 +362,7 @@
                                 </div> <!-- rating-wrap.// -->
                             </figcaption>
                             <div class="bottom-wrap">
-                                <a href="<?= base_url(); ?>index.php/C_Product/ID/<?= $top_product3->id_jasa ?>" class="btn btn-sm btn-warning float-right">Detail</a>
+                                <a href="<?= base_url(); ?>Product/ID/<?= $top_product3->id_jasa ?>" class="btn btn-sm btn-warning float-right">Detail</a>
                                 <div class="price-wrap h5">
 
                                 </div> <!-- price-wrap.// -->
@@ -394,7 +394,7 @@
                         <figure class="card card-product">
                             <div class="img-fluid img-reponsive"><img src="<?php echo base_url(); ?>assets/images/vendor/<?= $y->id_jasa ?>.jpg"> </div>
                             <figcaption class="info-wrap">
-                                <h6 class="title text-center"><a href="<?= base_url(); ?>index.php/C_Product/ID/<?= $y->id_jasa ?>"><?= $y->jasa ?></a></h6>
+                                <h6 class="title text-center"><a href="<?= base_url(); ?>Product/ID/<?= $y->id_jasa ?>"><?= $y->jasa ?></a></h6>
                                 <p class="desc"><?= $y->ket ?></p>
                                 <div class="rating-wrap">
                             </figcaption>

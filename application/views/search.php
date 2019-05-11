@@ -65,7 +65,7 @@
 						</div> <!-- brand-wrap.// -->
 					</div>
 					<div class="col-lg-6 col-sm-8">
-						<form action="<?= base_url(); ?>index.php/C_Search/index" class="search-wrap" method="post">
+						<form action="<?= base_url(); ?>Search/index" class="search-wrap" method="post">
 							<div class="input-group w-100">
 								<input type="text" class="form-control" style="width:55%;" placeholder="Search" name="keyword">
 								<div class="input-group-append">
@@ -300,7 +300,7 @@
 											</div> <!-- info-price-detail // -->
 											<br>
 											<p>
-												<a href="<?= base_url(); ?>index.php/C_Product/ID/<?= $t->id_jasa ?>" class="btn btn-primary"> Pesan Sekarang </a>
+												<a href="<?= base_url(); ?>Product/ID/<?= $t->id_jasa ?>" class="btn btn-primary"> Pesan Sekarang </a>
 											</p>
 										</div> <!-- action-wrap.// -->
 									</aside> <!-- col.// -->
@@ -321,7 +321,7 @@
 								</aside>
 								<br>
 								<aside class="col-sm-5 border-left ">
-									<form action="<?= base_url(); ?>index.php/C_Search/Saran" method="post">
+									<form action="<?= base_url(); ?>Search/Saran" method="post">
 										<div class="form-group">
 											<label for="jasa">
 												<h6>Nama Jasa:</h6>

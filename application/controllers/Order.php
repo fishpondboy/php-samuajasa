@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class C_Order extends CI_Controller {
+class Order extends CI_Controller {
 	function __construct()
 	{
 		parent::__construct();
@@ -34,6 +34,6 @@ class C_Order extends CI_Controller {
 		);
 		$this->M_Order->order_data($data, 'tbl_pesan');
 		$this->M_Order->konfirmasi($id_pesan, $jasa, $nama, $kontak, $alamat);
-		redirect('index.php/C_Main/');
+		redirect('Main/');
 	}
 }

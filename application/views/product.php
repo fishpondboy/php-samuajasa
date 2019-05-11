@@ -53,7 +53,7 @@
             <nav class="mb-3">
                 <ol class="breadcrumb">
                     <li class="breadcrumb-item"><a href="<?php echo base_url(); ?>">Home</a></li>
-                    <li class="breadcrumb-item"><a href="<?php echo base_url(); ?>C_Product"></a>Product </li>
+                    <li class="breadcrumb-item"><a href="<?php echo base_url(); ?>Product"></a>Product </li>
                     <li class="breadcrumb-item active" aria-current="page">Detail</li>
                 </ol>
             </nav>
@@ -106,7 +106,7 @@
                                         </ul>
                                     </div> <!-- rating-wrap.// -->
                                     <hr>
-                                    <a href="<?= base_url(); ?>index.php/C_Order/ID/<?= $product->id_jasa ?>" class="btn  btn-warning"> Order </a>
+                                    <a href="<?= base_url(); ?>Order/ID/<?= $product->id_jasa ?>" class="btn  btn-warning"> Order </a>
                                     <!-- short-info-wrap .// -->
                                 </article> <!-- card-body.// -->
                             </aside> <!-- col.// -->

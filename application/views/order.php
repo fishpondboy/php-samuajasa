@@ -68,7 +68,7 @@
                     <li class="nav-item active">
                         <a class="nav-link" href="<?php echo base_url(); ?>">Home <span class="sr-only">(current)</span></a>
                     </li>
-                    <li class="nav-item"><a class="nav-link" href="<?php echo base_url();  ?>index.php/C_Search/index">Product</a></li>
+                    <li class="nav-item"><a class="nav-link" href="<?php echo base_url();  ?>Search/index">Product</a></li>
                     <li class="nav-item"><a class="nav-link" href="#about">About Us</a></li>
                     <li class="nav-item"><a class="nav-link" href="#testimoni">Testimoni</a></li>
                 </ul>
@@ -89,7 +89,7 @@
                     <div class="card-header bg-primary text-white"><i class="fa fa-envelope"></i> No Pesanan: <?= $id_pesan ?>
                     </div>
                     <div class="card-body">
-                        <form action="<?= base_url(); ?>index.php/C_Order/Confirm" Method="post">
+                        <form action="<?= base_url(); ?>Order/Confirm" Method="post">
                             <div class="form-group">
                                 <label for="name">Jenis Jasa</label>
                                 <input type="text" class="form-control" name="jasa" aria-describedby="emailHelp" placeholder="<?= $order->jasa ?>" readonly>
