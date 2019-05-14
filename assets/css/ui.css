@@ -8,6 +8,12 @@ html {
 	font-size: 15px;
 }
 
+/* -----Font heading------ */
+.section-content h1,h2{
+	font-family: 'Fredoka One';
+	color: #1e314d
+}
+
 /* ================== HELPERS  =================== */
 a:hover {
 	text-decoration: none;

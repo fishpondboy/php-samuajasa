@@ -24,9 +24,6 @@
     <script src="<?php echo base_url(); ?>assets/plugins/fancybox/fancybox.min.js" type="text/javascript"></script>
     <link href="<?php echo base_url(); ?>assets/plugins/fancybox/fancybox.min.css" type="text/css" rel="stylesheet">
 
-    <!-- custom style -->
-    <link href="<?php echo base_url(); ?>assets/css/ui.css" rel="stylesheet" type="text/css" />
-    <link href="<?php echo base_url(); ?>assets/css/responsive.css" rel="stylesheet" media="only screen and (max-width: 1200px)" />
     <!-- plugin: owl carousel  -->
     <link href="<?php echo base_url(); ?>assets/plugins/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
     <link href="<?php echo base_url(); ?>assets/plugins/owlcarousel/assets/owl.theme.default.css" rel="stylesheet">
@@ -41,6 +38,8 @@
     <link href="<?php echo base_url(); ?>assets/css/ui.css" rel="stylesheet" type="text/css" />
     <link href="<?php echo base_url(); ?>assets/css/responsive.css" rel="stylesheet" media="only screen and (max-width: 1200px)" />
     <link href="<?php echo base_url(); ?>assets/css/style.css" rel="stylesheet" type="text/css" />
+    <!-- Font Custome -->
+    <link href="https://fonts.googleapis.com/css?family=Fredoka+One" rel="stylesheet">
     <!-- custom javascript -->
     <script src="<?php echo base_url(); ?>assets/js/script.js" type="text/javascript"></script>
 
@@ -69,7 +68,7 @@
     </div>
 
     <!-- ========================= SECTION INTRO ========================= -->
-    <section class="section-intro text-black text-center" style="background-image: url('<?= base_url(); ?>assets/images/samuajasabg.jpg');">
+    <section class="section-intro text-black text-center" style="background-image: url('<?= base_url(); ?>assets/images/samuajasabg.jpg')">
         <div class="container d-flex flex-column">
             <div class="row mt-auto">
                 <div class="col-lg-8 col-sm-12 text-center mx-auto">
@@ -98,7 +97,7 @@
     </section>
     <!-- ========================= SECTION INTRO END// ========================= -->
 
-    <!-- Floating Button Start -->
+    <!-- Floating Button Start
     <div class="float">
         <a class="float" id="menu-share">
             <i class="fa fa-phone my-float"></i>
@@ -114,8 +113,8 @@
                     <i class="fab fa-whatsapp my-float"></i>
                 </a></li>
         </ul>
-    </div>
-    <style>
+    </div> -->
+    <!-- <style>
         /* * {
             padding: 0;
             margin: 0;
@@ -123,23 +122,23 @@
 
         @media only screen and (max-width: 768px) {
             float {
-            position: fixed;
-            width: 70px;
-            height: 70px;
-            bottom:70px;
-            right: 30px;
-            background-color: #14920B;
-            color: #FFF;
-            border-radius: 50px;
-            text-align: center;
-            box-shadow: 1px 1px 2px #000;
-            max-width: 100%;
-            z-index: 1000;
-            animation: bot-to-top 2s ease-out;
-            
+                position: fixed;
+                width: 70px;
+                height: 70px;
+                bottom: 70px;
+                right: 30px;
+                background-color: #14920B;
+                color: #FFF;
+                border-radius: 50px;
+                text-align: center;
+                box-shadow: 1px 1px 2px #000;
+                max-width: 100%;
+                z-index: 1000;
+                animation: bot-to-top 2s ease-out;
+
+            }
         }
-        }
- 
+
         .label-container {
             position: fixed;
             bottom: 48px;
@@ -281,7 +280,8 @@
             }
         }
     </style>
-    <!-- Floating button End -->
+    Floating button End -->
+
 
     <section class="section-content padding-y">
         <div class="container">
@@ -289,87 +289,87 @@
                 <h2 class=" text-center">Jasa Pilihan Untuk Anda</h2>
             </header><!-- sect-heading -->
             <div class="row">
-<!-- Top Product 1 -->
-                    <div class="col-md-4">
-                        <figure class="card card-product">
-                            <div class="img-wrap"><img src="<?php echo base_url(); ?>assets/images/vendor/<?= $top_product1->id_jasa ?>.jpg"></div>
-                            <figcaption class="info-wrap">
-                                <h4 class="title"><?= $top_product1->jasa ?></h4>
-                                <p class="desc"><?= $top_product1->ket ?></p>
-                                <div class="rating-wrap">
-                                    <ul class="rating-stars">
-                                        <li style="width:80%" class="stars-active">
-                                            <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
-                                        </li>
-                                        <li>
-                                            <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
-                                        </li>
-                                    </ul>
-                                </div> <!-- rating-wrap.// -->
-                            </figcaption>
-                            <div class="bottom-wrap">
-                                <a href="<?= base_url(); ?>Product/ID/<?= $top_product1->id_jasa ?>" class="btn btn-sm btn-warning float-right">Detail</a>
-                                <div class="price-wrap h5">
+                <!-- Top Product 1 -->
+                <div class="col-md-4">
+                    <figure class="card card-product">
+                        <div class="img-wrap"><img src="<?php echo base_url(); ?>assets/images/vendor/<?= $top_product1->id_jasa ?>.jpg"></div>
+                        <figcaption class="info-wrap">
+                            <h4 class="title"><?= $top_product1->jasa ?></h4>
+                            <p class="desc"><?= $top_product1->ket ?></p>
+                            <div class="rating-wrap">
+                                <ul class="rating-stars">
+                                    <li style="width:80%" class="stars-active">
+                                        <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+                                    </li>
+                                    <li>
+                                        <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+                                    </li>
+                                </ul>
+                            </div> <!-- rating-wrap.// -->
+                        </figcaption>
+                        <div class="bottom-wrap">
+                            <a href="<?= base_url(); ?>Product/ID/<?= $top_product1->id_jasa ?>" class="btn btn-sm btn-warning float-right">Detail</a>
+                            <div class="price-wrap h5">
 
-                                </div> <!-- price-wrap.// -->
-                            </div> <!-- bottom-wrap.// -->
-                        </figure>
-                    </div> <!-- col // -->
-    <!-- Top Product1 // -->
-    <!-- Top Product 2 -->
-                    <div class="col-md-4">
-                        <figure class="card card-product">
-                            <div class="img-wrap"><img src="<?php echo base_url(); ?>assets/images/vendor/<?= $top_product2->id_jasa ?>.jpg"></div>
-                            <figcaption class="info-wrap">
-                                <h4 class="title"><?= $top_product2->jasa ?></h4>
-                                <p class="desc"><?= $top_product2->ket ?></p>
-                                <div class="rating-wrap">
-                                    <ul class="rating-stars">
-                                        <li style="width:80%" class="stars-active">
-                                            <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
-                                        </li>
-                                        <li>
-                                            <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
-                                        </li>
-                                    </ul>
-                                </div> <!-- rating-wrap.// -->
-                            </figcaption>
-                            <div class="bottom-wrap">
-                                <a href="<?= base_url(); ?>Product/ID/<?= $top_product2->id_jasa ?>" class="btn btn-sm btn-warning float-right">Detail</a>
-                                <div class="price-wrap h5">
+                            </div> <!-- price-wrap.// -->
+                        </div> <!-- bottom-wrap.// -->
+                    </figure>
+                </div> <!-- col // -->
+                <!-- Top Product1 // -->
+                <!-- Top Product 2 -->
+                <div class="col-md-4">
+                    <figure class="card card-product">
+                        <div class="img-wrap"><img src="<?php echo base_url(); ?>assets/images/vendor/<?= $top_product2->id_jasa ?>.jpg"></div>
+                        <figcaption class="info-wrap">
+                            <h4 class="title"><?= $top_product2->jasa ?></h4>
+                            <p class="desc"><?= $top_product2->ket ?></p>
+                            <div class="rating-wrap">
+                                <ul class="rating-stars">
+                                    <li style="width:80%" class="stars-active">
+                                        <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+                                    </li>
+                                    <li>
+                                        <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+                                    </li>
+                                </ul>
+                            </div> <!-- rating-wrap.// -->
+                        </figcaption>
+                        <div class="bottom-wrap">
+                            <a href="<?= base_url(); ?>Product/ID/<?= $top_product2->id_jasa ?>" class="btn btn-sm btn-warning float-right">Detail</a>
+                            <div class="price-wrap h5">
 
-                                </div> <!-- price-wrap.// -->
-                            </div> <!-- bottom-wrap.// -->
-                        </figure>
-                    </div> <!-- col // -->
-    <!-- Top Product2 // -->
-        <!-- Top Product 2 -->
-                    <div class="col-md-4">
-                        <figure class="card card-product">
-                            <div class="img-wrap"><img src="<?php echo base_url(); ?>assets/images/vendor/<?= $top_product3->id_jasa ?>.jpg"></div>
-                            <figcaption class="info-wrap">
-                                <h4 class="title"><?= $top_product3->jasa ?></h4>
-                                <p class="desc"><?= $top_product3->ket ?></p>
-                                <div class="rating-wrap">
-                                    <ul class="rating-stars">
-                                        <li style="width:80%" class="stars-active">
-                                            <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
-                                        </li>
-                                        <li>
-                                            <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
-                                        </li>
-                                    </ul>
-                                </div> <!-- rating-wrap.// -->
-                            </figcaption>
-                            <div class="bottom-wrap">
-                                <a href="<?= base_url(); ?>Product/ID/<?= $top_product3->id_jasa ?>" class="btn btn-sm btn-warning float-right">Detail</a>
-                                <div class="price-wrap h5">
+                            </div> <!-- price-wrap.// -->
+                        </div> <!-- bottom-wrap.// -->
+                    </figure>
+                </div> <!-- col // -->
+                <!-- Top Product2 // -->
+                <!-- Top Product 2 -->
+                <div class="col-md-4">
+                    <figure class="card card-product">
+                        <div class="img-wrap"><img src="<?php echo base_url(); ?>assets/images/vendor/<?= $top_product3->id_jasa ?>.jpg"></div>
+                        <figcaption class="info-wrap">
+                            <h4 class="title"><?= $top_product3->jasa ?></h4>
+                            <p class="desc"><?= $top_product3->ket ?></p>
+                            <div class="rating-wrap">
+                                <ul class="rating-stars">
+                                    <li style="width:80%" class="stars-active">
+                                        <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+                                    </li>
+                                    <li>
+                                        <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+                                    </li>
+                                </ul>
+                            </div> <!-- rating-wrap.// -->
+                        </figcaption>
+                        <div class="bottom-wrap">
+                            <a href="<?= base_url(); ?>Product/ID/<?= $top_product3->id_jasa ?>" class="btn btn-sm btn-warning float-right">Detail</a>
+                            <div class="price-wrap h5">
 
-                                </div> <!-- price-wrap.// -->
-                            </div> <!-- bottom-wrap.// -->
-                        </figure>
-                    </div> <!-- col // -->
-    <!-- Top Product3 // -->
+                            </div> <!-- price-wrap.// -->
+                        </div> <!-- bottom-wrap.// -->
+                    </figure>
+                </div> <!-- col // -->
+                <!-- Top Product3 // -->
             </div> <!-- row.// -->
 
 
@@ -383,30 +383,32 @@
 
     <!-- test -->
     <!-- product -->
-    <div class="container">
-        <header class="section-heading">
-            <h2 class=" text-center">Jasa</h2>
-        </header><!-- sect-heading -->
-        <div class="row">
-            <div class="owl-carousel owl-init slide-items" data-items="5" data-margin="20" data-dots="true" data-nav="true">
-                <?php foreach ($product as $y) { ?>
-                    <div class="col-md-12">
-                        <figure class="card card-product">
-                            <div class="img-fluid img-reponsive"><img src="<?php echo base_url(); ?>assets/images/vendor/<?= $y->id_jasa ?>.jpg"> </div>
-                            <figcaption class="info-wrap">
-                                <h6 class="title text-center"><a href="<?= base_url(); ?>Product/ID/<?= $y->id_jasa ?>"><?= $y->jasa ?></a></h6>
-                                <p class="desc"><?= $y->ket ?></p>
-                                <div class="rating-wrap">
-                            </figcaption>
-                            <div class="bottom-wrap">
-                                <a href="" class="btn btn-warning float-right">Detail</a>
-                            </div> <!-- bottom-wrap.// -->
-                        </figure>
-                    </div>
-                <?php } ?>
+    <section class="section-content padding-y">
+        <div class="container">
+            <header class="section-heading">
+                <h2 class=" text-center">Jasa</h2>
+            </header><!-- sect-heading -->
+            <div class="row">
+                <div class="owl-carousel owl-init slide-items" data-items="5" data-margin="20" data-dots="true" data-nav="true">
+                    <?php foreach ($product as $y) { ?>
+                        <div class="col-md-12">
+                            <figure class="card card-product">
+                                <div class="img-fluid img-reponsive"><img src="<?php echo base_url(); ?>assets/images/vendor/<?= $y->id_jasa ?>.jpg"> </div>
+                                <figcaption class="info-wrap">
+                                    <h6 class="title text-center"><a href="<?= base_url(); ?>Product/ID/<?= $y->id_jasa ?>"><?= $y->jasa ?></a></h6>
+                                    <p class="desc"><?= $y->ket ?></p>
+                                    <div class="rating-wrap">
+                                </figcaption>
+                                <div class="bottom-wrap">
+                                    <a href="" class="btn btn-warning float-right">Detail</a>
+                                </div> <!-- bottom-wrap.// -->
+                            </figure>
+                        </div>
+                    <?php } ?>
+                </div>
             </div>
         </div>
-    </div>
+    </section>
 
     <!-- batas test  -->
 
@@ -519,81 +521,100 @@
             </div>
         </div>
     </section>
-     <!--batas testi -->
-     <!--===================== SECTION ABOUT US END =============== -->
+    <!--batas testi -->
+    <!--===================== SECTION ABOUT US END =============== -->
 
-     <!--========================= FOOTER ========================= -->
+    <!--========================= FOOTER ========================= -->
     <!--<footer class="section-footer" style="background-color:#1E324E;">-->
-        <!--<div class="container">-->
-        <!--    <section class="footer-top padding-top">-->
-        <!--        <div class="row">-->
-        <!--            <aside class="col-sm-3 col-md-3 white">-->
-        <!--                <h5 class="title">Customer Services</h5>-->
-        <!--                <ul class="list-unstyled">-->
-        <!--                    <li> <a href="#">Help center</a></li>-->
-        <!--                    <li> <a href="#">Money refund</a></li>-->
-        <!--                    <li> <a href="#">Terms and Policy</a></li>-->
-        <!--                    <li> <a href="#">Open dispute</a></li>-->
-        <!--                </ul>-->
-        <!--            </aside>-->
-        <!--            <aside class="col-sm-3  col-md-3 white">-->
-        <!--                <h5 class="title">My Account</h5>-->
-        <!--                <ul class="list-unstyled">-->
-        <!--                    <li> <a href="#"> User Login </a></li>-->
-        <!--                    <li> <a href="#"> User register </a></li>-->
-        <!--                    <li> <a href="#"> Account Setting </a></li>-->
-        <!--                    <li> <a href="#"> My Orders </a></li>-->
-        <!--                    <li> <a href="#"> My Wishlist </a></li>-->
-        <!--                </ul>-->
-        <!--            </aside>-->
-        <!--            <aside class="col-sm-3  col-md-3 white">-->
-        <!--                <h5 class="title">About</h5>-->
-        <!--                <ul class="list-unstyled">-->
-        <!--                    <li> <a href="#"> Our history </a></li>-->
-        <!--                    <li> <a href="#"> How to buy </a></li>-->
-        <!--                    <li> <a href="#"> Delivery and payment </a></li>-->
-        <!--                    <li> <a href="#"> Advertice </a></li>-->
-        <!--                    <li> <a href="#"> Partnership </a></li>-->
-        <!--                </ul>-->
-        <!--            </aside>-->
-        <!--            <aside class="col-sm-3">-->
-        <!--                <article class="white">-->
-        <!--                    <h5 class="title">Contacts</h5>-->
-        <!--                    <p>-->
-        <!--                        <strong>Phone: </strong> +123456789 <br>-->
-        <!--                        <strong>Fax:</strong> +123456789-->
-        <!--                    </p>-->
+    <!--<div class="container">-->
+    <!--    <section class="footer-top padding-top">-->
+    <!--        <div class="row">-->
+    <!--            <aside class="col-sm-3 col-md-3 white">-->
+    <!--                <h5 class="title">Customer Services</h5>-->
+    <!--                <ul class="list-unstyled">-->
+    <!--                    <li> <a href="#">Help center</a></li>-->
+    <!--                    <li> <a href="#">Money refund</a></li>-->
+    <!--                    <li> <a href="#">Terms and Policy</a></li>-->
+    <!--                    <li> <a href="#">Open dispute</a></li>-->
+    <!--                </ul>-->
+    <!--            </aside>-->
+    <!--            <aside class="col-sm-3  col-md-3 white">-->
+    <!--                <h5 class="title">My Account</h5>-->
+    <!--                <ul class="list-unstyled">-->
+    <!--                    <li> <a href="#"> User Login </a></li>-->
+    <!--                    <li> <a href="#"> User register </a></li>-->
+    <!--                    <li> <a href="#"> Account Setting </a></li>-->
+    <!--                    <li> <a href="#"> My Orders </a></li>-->
+    <!--                    <li> <a href="#"> My Wishlist </a></li>-->
+    <!--                </ul>-->
+    <!--            </aside>-->
+    <!--            <aside class="col-sm-3  col-md-3 white">-->
+    <!--                <h5 class="title">About</h5>-->
+    <!--                <ul class="list-unstyled">-->
+    <!--                    <li> <a href="#"> Our history </a></li>-->
+    <!--                    <li> <a href="#"> How to buy </a></li>-->
+    <!--                    <li> <a href="#"> Delivery and payment </a></li>-->
+    <!--                    <li> <a href="#"> Advertice </a></li>-->
+    <!--                    <li> <a href="#"> Partnership </a></li>-->
+    <!--                </ul>-->
+    <!--            </aside>-->
+    <!--            <aside class="col-sm-3">-->
+    <!--                <article class="white">-->
+    <!--                    <h5 class="title">Contacts</h5>-->
+    <!--                    <p>-->
+    <!--                        <strong>Phone: </strong> +123456789 <br>-->
+    <!--                        <strong>Fax:</strong> +123456789-->
+    <!--                    </p>-->
 
     <!--                        <div class="btn-group white">-->
     <!--                            <a class="btn btn-facebook" title="Facebook" target="_blank" href="#"><i class="fab fa-facebook-f  fa-fw"></i></a>-->
     <!--                            <a class="btn btn-instagram" title="Instagram" target="_blank" href="https://www.instagram.com/samuajasa/"><i class="fab fa-instagram  fa-fw"></i></a>-->
-                            <!--    <a class="btn btn-youtube" title="Youtube" target="_blank" href="#"><i class="fab fa-youtube  fa-fw"></i></a>-->
-                            <!--    <a class="btn btn-twitter" title="Twitter" target="_blank" href="#"><i class="fab fa-twitter  fa-fw"></i></a>-->
-                            <!--</div>-->
+    <!--    <a class="btn btn-youtube" title="Youtube" target="_blank" href="#"><i class="fab fa-youtube  fa-fw"></i></a>-->
+    <!--    <a class="btn btn-twitter" title="Twitter" target="_blank" href="#"><i class="fab fa-twitter  fa-fw"></i></a>-->
+    <!--</div>-->
     <!--                    </article>-->
     <!--                </aside>-->
-    <!--            </div> <!-- row.// -->
+    <!--            </div> <--- row.// -->
     <!--            <br>-->
     <!--        </section>-->
-            <footer>
-            <section class="footer-bottom row border-top-white" style="background-color:#1E324E;">
-                <div class="col-sm-12 text-center">
-                    <p class="text-sm-center text-white-50">
-                        Copyright &copy 2019
-                        <a href="#" class="text-white-50">Samuajasa.com</a>
-                    </p>
-                </div>
-            </section> <!-- //footer-top 
-        </div><!-- //container -->
-           </footer>
-    
-<!--        <footer>-->
-<!--  <div class="copyright" style="background-color:#1E324E;">-->
-<!--    <p>&copy 2019 - Samuajasa.com</p>-->
-<!--  </div>-->
-<!--</footer>-->
-    
+
+    <footer>
+        <section class="footer-bottom border-top-white" style="background-color:#1E324E;">
+            <div class="col-sm-12 text-center">
+                <p class="text-sm-center text-white-50">
+                    Copyright &copy 2019
+                    <a href="#" class="text-white-50">Samuajasa.com</a>
+                </p>
+            </div>
+        </section>
+        <!-- //footer-top 
+        </div><!- //container -->
+    </footer>
+
+    <!--        <footer>-->
+    <!--  <div class="copyright" style="background-color:#1E324E;">-->
+    <!--    <p>&copy 2019 - Samuajasa.com</p>-->
+    <!--  </div>-->
+    <!--</footer>-->
+
     <!-- ========================= FOOTER END // ========================= -->
+    <!-- Live Chat -->
+    <!--Start of Tawk.to Script-->
+    <script type="text/javascript">
+        var Tawk_API = Tawk_API || {},
+            Tawk_LoadStart = new Date();
+        (function() {
+            var s1 = document.createElement("script"),
+                s0 = document.getElementsByTagName("script")[0];
+            s1.async = true;
+            s1.src = 'https://embed.tawk.to/5cd9a307d07d7e0c639359c9/default';
+            s1.charset = 'UTF-8';
+            s1.setAttribute('crossorigin', '*');
+            s0.parentNode.insertBefore(s1, s0);
+        })();
+    </script>
+    <!--End of Tawk.to Script-->
+    <!-- Live Chat End -->
 </body>
 
 </html>
